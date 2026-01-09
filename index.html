@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nur Izzati Aqilah | Portfolio</title>
+    <meta name="description" content="Portfolio of Nur Izzati Aqilah, a Computer Science student specializing in Database Management.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nur Izzati Aqilah | Portfolio">
+    <meta property="og:description" content="Computer Science student specializing in Database Management. Available for internships starting March 2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nur Izzati Aqilah | Portfolio">
+    <meta name="twitter:description" content="Computer Science student specializing in Database Management. Available for internships starting March 2026.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons (Lucide & Devicon) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .active-link { color: #2563eb; font-weight: 600; }
+        .hover-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.15); }
+        .blob { position: absolute; filter: blur(40px); z-index: -1; opacity: 0.5; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-bold text-xl tracking-tighter text-blue-600 flex items-center gap-2">
+                <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center text-sm">IA</span>
+                IZZATI AQILAH
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="active-link hover:text-blue-600 transition">Home</a>
+                <a href="about.html" class="text-gray-500 hover:text-blue-600 transition">About Me</a>
+                <a href="education.html" class="text-gray-500 hover:text-blue-600 transition">Education</a>
+                <a href="skills.html" class="text-gray-500 hover:text-blue-600 transition">Skills</a>
+                <a href="projects.html" class="text-gray-500 hover:text-blue-600 transition">Projects</a>
+                <a href="contact.html" class="text-gray-500 hover:text-blue-600 transition">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2 text-gray-600 hover:text-blue-600 transition" id="menu-btn">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 flex flex-col p-4 space-y-4 text-sm font-medium shadow-xl">
+            <a href="index.html" class="active-link px-4 py-2 bg-blue-50 rounded-lg">Home</a>
+            <a href="about.html" class="px-4 py-2 hover:bg-gray-50 rounded-lg">About Me</a>
+            <a href="education.html" class="px-4 py-2 hover:bg-gray-50 rounded-lg">Education</a>
+            <a href="skills.html" class="px-4 py-2 hover:bg-gray-50 rounded-lg">Skills</a>
+            <a href="projects.html" class="px-4 py-2 hover:bg-gray-50 rounded-lg">Projects</a>
+            <a href="contact.html" class="px-4 py-2 hover:bg-gray-50 rounded-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10 overflow-hidden">
+        <!-- Background Blobs -->
+        <div class="blob bg-blue-200 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="blob bg-indigo-100 w-80 h-80 rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex flex-col sm:flex-row items-center gap-3 animate-fade-in-down" data-aos="fade-down" data-aos-delay="100">
+                <div class="px-4 py-1.5 bg-white/80 backdrop-blur-sm text-blue-600 text-xs font-bold rounded-full uppercase tracking-widest flex items-center gap-2 border border-blue-100 shadow-sm">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    Available for Internship
+                </div>
+                <div class="px-4 py-1.5 bg-white/50 text-gray-500 text-[10px] font-semibold rounded-full uppercase tracking-tight border border-gray-100">
+                    16 March — 28 August 2026
+                </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="space-y-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-tight" data-aos="fade-up" data-aos-delay="200">
+                    Building Structured <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Digital Solutions</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="300">
+                    Hi, I'm <span class="font-semibold text-gray-900">Nur Izzati Aqilah</span>. A Database Management student at UTeM passionate about crafting efficient systems, optimized databases, and clean user interfaces.
+                </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6" data-aos="fade-up" data-aos-delay="400">
+                <a href="#featured-projects" class="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white rounded-2xl font-semibold hover:bg-gray-800 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-xl shadow-gray-200">
+                    View My Work <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-white text-gray-900 border border-gray-200 rounded-2xl font-semibold hover:bg-gray-50 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    Contact Me <i data-lucide="send" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Tech Stack Teaser -->
+            <div class="pt-12 text-center" data-aos="fade-up" data-aos-delay="500">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Core Technologies</p>
+                <div class="flex justify-center gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <i class="devicon-php-plain text-2xl"></i>
+                    <i class="devicon-mysql-plain text-2xl"></i>
+                    <i class="devicon-html5-plain text-2xl"></i>
+                    <i class="devicon-css3-plain text-2xl"></i>
+                    <i class="devicon-javascript-plain text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Stats Section -->
+    <section class="py-10 bg-white border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center md:text-left space-y-1" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-3xl font-bold text-blue-600">3+</h3>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Systems Built</p>
+            </div>
+            <div class="text-center md:text-left space-y-1" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-3xl font-bold text-blue-600">7/10</h3>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Skill Average</p>
+            </div>
+            <div class="text-center md:text-left space-y-1" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-3xl font-bold text-blue-600">3.56</h3>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Current CGPA</p>
+            </div>
+            <div class="text-center md:text-left space-y-1" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-3xl font-bold text-blue-600">UTeM</h3>
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Institution</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief About Section -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative" data-aos="fade-right">
+                <!-- Decorative Graphic -->
+                <div class="absolute -inset-4 bg-gradient-to-r from-blue-100 to-indigo-50 rounded-[2rem] transform -rotate-2"></div>
+                <div class="relative bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white">
+                            <i data-lucide="quote" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-gray-900">Work Philosophy</p>
+                            <p class="text-xs text-gray-500">Disciplined & Detail Oriented</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed text-lg">
+                        "I believe in working in a disciplined and responsible way. I value writing clean, organized, and efficient code so that systems are easy to understand and maintain."
+                    </p>
+                    <div class="mt-6 flex items-center gap-2">
+                         <span class="h-px w-8 bg-blue-600"></span>
+                         <span class="text-xs font-bold text-blue-600 uppercase">Steve Jobs Inspired</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6" data-aos="fade-left">
+                <h2 class="text-blue-600 font-bold text-sm uppercase tracking-widest">Who I Am</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+                    Aspiring Database Specialist & <br>System Developer.
+                </h3>
+                <p class="text-gray-500 leading-relaxed">
+                    I am currently pursuing a Bachelor of Computer Science (Database Management) at UTeM. My academic journey has been defined by a strong focus on technical mastery and practical system development. I enjoy turning complex data requirements into simple, user-friendly applications.
+                </p>
+                <div class="pt-4">
+                    <a href="about.html" class="text-blue-600 font-bold hover:text-blue-800 inline-flex items-center gap-2 transition-all group">
+                        Read My Full Story 
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" class="py-24 bg-white border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="space-y-2">
+                    <h2 class="text-blue-600 font-bold text-sm uppercase tracking-widest">Portfolio</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">Featured Projects</h3>
+                </div>
+                <a href="projects.html" class="hidden md:inline-flex items-center gap-2 px-6 py-3 bg-gray-50 text-gray-900 rounded-xl font-semibold hover:bg-gray-100 transition-colors border border-gray-200">
+                    View All Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="hover-card bg-gray-50 rounded-3xl border border-gray-100 overflow-hidden group cursor-pointer" onclick="window.location.href='projects.html'" data-aos="fade-up">
+                    <div class="p-8 pb-0">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold rounded-full uppercase">Internship Project</span>
+                            <i data-lucide="external-link" class="text-gray-400 group-hover:text-blue-600 transition"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">e-PMS Paperwork System</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                            A centralized platform for real-time document tracking and multi-level approvals, digitalizing manual paperwork processes at UTHM.
+                        </p>
+                    </div>
+                    <div class="bg-blue-600 p-8 flex justify-center items-center mt-auto">
+                        <!-- Icon representation of UI -->
+                        <i data-lucide="file-check" class="text-white w-24 h-24 opacity-90 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="hover-card bg-gray-50 rounded-3xl border border-gray-100 overflow-hidden group cursor-pointer" onclick="window.location.href='projects.html'" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-8 pb-0">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-[10px] font-bold rounded-full uppercase">Final Year Project</span>
+                            <i data-lucide="external-link" class="text-gray-400 group-hover:text-blue-600 transition"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-2">e-SAMS Activity Manager</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                            A comprehensive system for managing student activity proposals, streamlining approval workflows and budget allocation.
+                        </p>
+                    </div>
+                    <div class="bg-indigo-600 p-8 flex justify-center items-center mt-auto">
+                        <!-- Icon representation of UI -->
+                        <i data-lucide="users" class="text-white w-24 h-24 opacity-90 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-8 text-center md:hidden">
+                <a href="projects.html" class="inline-flex items-center gap-2 text-blue-600 font-bold">
+                    View All Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Overview -->
+    <section class="py-24 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <div data-aos="fade-up">
+                <h2 class="text-blue-600 font-bold text-sm uppercase tracking-widest mb-2">Expertise</h2>
+                <h3 class="text-3xl font-extrabold text-gray-900">Technical Proficiency</h3>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="100">
+                <!-- Skill Items -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors flex flex-col items-center gap-3">
+                    <i class="devicon-php-plain colored text-4xl"></i>
+                    <span class="font-semibold text-gray-700 text-sm">PHP</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors flex flex-col items-center gap-3">
+                    <i class="devicon-mysql-plain colored text-4xl"></i>
+                    <span class="font-semibold text-gray-700 text-sm">MySQL</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors flex flex-col items-center gap-3">
+                    <i class="devicon-cplusplus-plain colored text-4xl"></i>
+                    <span class="font-semibold text-gray-700 text-sm">C++</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors flex flex-col items-center gap-3">
+                    <i class="devicon-javascript-plain colored text-4xl"></i>
+                    <span class="font-semibold text-gray-700 text-sm">JavaScript</span>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a href="skills.html" class="inline-flex items-center gap-2 text-gray-500 hover:text-blue-600 transition font-medium text-sm">
+                    View Detailed Skillset <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto bg-blue-600 rounded-[2.5rem] p-12 text-center text-white relative shadow-2xl shadow-blue-200" data-aos="zoom-in">
+            <!-- Background Pattern -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white rounded-full mix-blend-overlay filter blur-xl"></div>
+            </div>
+
+            <div class="relative z-10 space-y-6">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Ready to Collaborate?</h2>
+                <p class="text-blue-100 max-w-lg mx-auto text-lg">
+                    I am currently available for internships starting March 2026. Let's discuss how I can contribute to your team.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="mailto:izzatiaqilahhh@gmail.com" class="px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all shadow-lg">
+                        Send an Email
+                    </a>
+                    <a href="docs/RESUME.pdf" download class="px-8 py-4 bg-blue-700 text-white border border-blue-500 rounded-xl font-bold hover:bg-blue-800 transition-all">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-100 bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-bold text-lg text-blue-600 tracking-tight">IZZATI AQILAH</span>
+                <p class="text-sm text-gray-400 mt-1">&copy; 2026 Professional Student Portfolio.</p>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="https://github.com/izzatiaqilahhh" class="text-gray-400 hover:text-gray-900 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                <a href="mailto:izzatiaqilahhh@gmail.com" class="text-gray-400 hover:text-blue-600 transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm');
+                navbar.classList.add('bg-white/95');
+            } else {
+                navbar.classList.remove('shadow-sm');
+                navbar.classList.remove('bg-white/95');
+            }
+        });
+    </script>
+</body>
+</html>
